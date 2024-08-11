@@ -1,0 +1,26 @@
+{
+  "name": "txtbkp",
+  "version": "1.0.0",
+  "description": "Text file backup utility",
+  "main": "txtbkp.js",
+  "bin": "txtbkp.js",
+  "scripts": {
+    "start": "node txtbkp.js",
+    "build": "pkg ."
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ignore": "^5.3.1"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
